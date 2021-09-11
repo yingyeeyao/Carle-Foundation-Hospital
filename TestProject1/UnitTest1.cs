@@ -20,6 +20,7 @@ namespace TestProject1
             originalList.AddRange(originalString.Split(','));
             Program p = new Program();
             var duplicates = p.CheckforDuplicates(originalList);
+            var duplicates1 = p.CheckforDuplicates(originalList);
             Assert.AreEqual(2, duplicates.ToList().Count());
         }
 
